@@ -108,8 +108,11 @@ document.addEventListener("click", (e) => {
             //play fail sound
             document.getElementById("faild").play();
             if (wrong == 8) {
-                endGame();
-                lettersContainer.classList.add("finished");
+                setTimeout(() => { 
+                    endGame();
+                    lettersContainer.classList.add("finished");
+                }, 3000);
+              
             }
 
         } else {
